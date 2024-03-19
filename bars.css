@@ -1,0 +1,15 @@
+ 
+/* external style sheet bars.css */ 
+
+A:link, A:visited, A:active  {color: #0000FF; text-decoration:none} 
+
+p.cat { font: bold 8pt Verdana, Arial, Helvetica; }
+
+p.act { font: 8pt Verdana, Arial, Helvetica, "sans-serif decoration":none; 
+text-indent:8pt}
+
+p.footer { text-align:center;
+font-size:small }
+
+
+

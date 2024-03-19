@@ -1,0 +1,31 @@
+/* external style sheet biochem.css */
+
+A:link, A:visited {color: #0000FF}
+A:active {color: #FF6600;}
+
+H2 {text-align:center; 
+	color:#AD0000}
+	
+H2.normal {}
+H3.title {text-align:center; 
+	color:#AD0000}
+
+H3.color {color:#AD0000}
+
+BODY {background-color:#FDF5E6;
+	background-image:url(../dnabckgd2.gif)}
+
+P.color {color:#AD0000}
+
+BLOCKQUOTE.color {color:#AD0000}
+
+input {  background-position: center; clip:  rect(   )}
+
+form {  text-align: center}
+
+B.color {color:#AD0000}
+
+P.footer {text-align:center; 
+	font-size:small}
+   
+   /* end of file */

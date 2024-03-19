@@ -1,0 +1,314 @@
+<HTML>
+<HEAD>
+<TITLE>Blood Types Tutorial</TITLE>
+<!-- Date: Thursday, June 5, 1997 -->
+<SCRIPT LANGUAGE="JavaScript">
+
+
+function nameit(window) {
+
+
+
+            self.name="main"
+
+}
+
+</SCRIPT>
+
+
+
+ <SCRIPT LANGUAGE="JavaScript">
+
+
+       var remote = null;
+
+       function Tour() {
+
+
+
+           remote = window.open('', 'btcalc',
+'width=500,height=465,resizable=yes');
+
+           if (remote != null) {
+
+           if (remote.opener == null) {
+
+               remote.opener = self;
+
+               }
+
+           remote.location.href = "btcalcFlashTest.html"
+
+           remote.focus()
+
+           }
+
+
+
+       }
+
+</SCRIPT>
+
+</HEAD>
+
+
+<BODY BGCOLOR="#FD F5 E6" BACKGROUND="../../../dnabckgd2.gif" 
+VLINK=#0000FF>
+
+<!--Begin table to constrain text to 500 pixels wide-->
+<TABLE WIDTH=500><TR><TD>
+
+
+<img src="../../banners/human_bio.gif">
+
+
+<!--HEADINGS-->
+
+<FONT COLOR="#73 1A 54">
+<H2 ALIGN=CENTER>
+Blood Types Tutorial 
+</H2>
+
+<H3 ALIGN=CENTER>
+How are ABO alleles inherited by our children?   
+</H3>
+
+</FONT>
+
+
+
+<!--BEGINNING OF TABLE FOR THE CONTENT OF THE PAGE-->
+
+<TABLE WIDTH=500>
+<TR>
+
+
+	<TD VALIGN=TOP WIDTH=20% ROWSPAN=2>
+	
+<P>
+	<A HREF="Intro.html">Introduction</A>
+</P>
+	
+	<A HREF="markers.html">Human ABO markers</A>
+	
+<P>
+	<A HREF="genotypes.html">Blood types and genotypes?</A>
+</P>
+	
+            <p><B>How are ABO alleles inherited by our children?</B></p>
+            <p><a href="JavaScript:Tour()"><img src="graphics/new.gif" width="28" height="11" border="0"><br>
+              Blood type &amp; Rh factor calculator</a> </p>
+            <P>
+	
+<A HREF="inherited.html#calculator">Blood type calculator</A>  
+	
+
+	
+<P>
+<A HREF="rh_factor.html">Rh factor</A>
+</P>
+	
+	<A HREF="blood_types.html">Problem set</A>
+	</TD>
+	
+
+	<TD VALIGN=TOP>
+	
+
+Each biological parent donates one of their two ABO alleles to their child. A mother who is blood type O can only pass an O allele to her son or daughter. A father who is blood type AB could pass either an A or a B allele to his son or daughter. This couple could have children of either blood type A (O from mother and A from father) or blood type B (O from mother and B from father). 
+
+
+<P>
+
+</P>
+<!--BEGINNING OF BORDERED TABLE FOR INHERITED-->
+
+<CENTER>
+<TABLE BORDER=1 CELLPADDING=3>
+<TR>
+
+
+<TD ALIGN=CENTER>
+	Inherited
+	</TD>
+	
+	<TD ALIGN=CENTER>
+	Blood type <BR>of child
+	</TD>
+
+	</TR>
+
+
+	<TR>
+	
+	<TD ALIGN=CENTER>
+	O from the mother<BR>
+	A from the father
+	</TD>
+	
+	<TD ALIGN=CENTER>
+	A
+	</TD>	
+	</TR>
+
+
+	<TR>
+	
+		<TD ALIGN=CENTER>
+	O from the mother<BR>
+	B from the father
+	</TD>
+	
+	<TD ALIGN=CENTER>
+	B
+	</TD>
+</TR>
+
+<!--END OF BORDERED TABLE FOR INHERITED-->
+</table></center></TR>
+</TABLE>
+
+
+
+<P>
+ Since there are 4 different maternal blood types and 4 different paternal blood types possible, there are 16 different combinations to consider when predicting the blood type of children. 
+
+
+<P ALIGN=CENTER>
+
+<FONT COLOR="#73 1A 54"><B>Blood Type <A NAME=calculator>Calculator</A></B></FONT>
+</P>
+
+
+
+The following Blood Type Calculator lets you determine the *possible* blood type of a child, given the blood types of the two biological parents or the *possible* blood types of one biological parent, given the blood types of the child and the other biological parent. We emphasize "possible" because, in most cases, blood typing is not conclusive when attempting to determine, include or exclude an individual as the parent of an offspring.
+<p></P>
+
+This calculator is based solely on theoretical principles. It would be a mistake to use this information to make any conclusions about your own family tree. Anyone wishing personal information
+about their own blood type inheritance is encouraged to contact their health care provider.
+
+
+	
+<P ALIGN=CENTER>
+	<FONT COLOR="#73 1A 54"><B>Determine the *possible* blood types of the other biological parent</B></FONT>
+</P>
+
+
+<!--BEGINNING OF TABLE FOR THE BLOOD CALCULATOR-->
+
+      <FORM action="http://biology.arizona.edu/human_bio/problem_sets/blood_types/btcalc.cfm" method=post>
+        <TABLE border cellpadding=10 align="center">
+
+<TR><TD><B> Child Blood Type</B></TD><TD><B>Parent Blood Type</B></TD></TR>
+<TR><TD>
+
+<SELECT name="cbtype">
+<OPTION value="A">A
+<OPTION value="AB">AB
+<OPTION value="B">B
+<OPTION value="O">O
+</SELECT>
+</TD>
+
+
+<TD>
+<SELECT name="pbtype">
+<OPTION value="A">A
+<OPTION value="AB">AB
+<OPTION value="B">B
+<OPTION value="O">O
+</SELECT>
+
+<TR>
+<TD align=center colspan=2><INPUT type=submit value="Get Possible Types for Other Parent">
+
+</TD>
+</TR>
+
+</TABLE>
+</form>
+
+<P ALIGN=CENTER>
+<FONT COLOR="#73 1A 54"><B>Determine the *possible* blood types for a child</B></FONT>
+</P>
+
+      <FORM action="http://biology.arizona.edu/human_bio/problem_sets/blood_types/btcalcB.cfm" method=post>
+        <TABLE border cellpadding=10 align="center">
+
+<TR><TD><B>Parent 1 Blood Type</B></TD><TD><B>Parent 2 Blood Type</B></TD></TR>
+<TR><TD>
+
+<SELECT name="p1btype">
+<OPTION value="A">A
+<OPTION value="AB">AB
+<OPTION value="B">B
+<OPTION value="O">O
+</SELECT>
+</TD>
+<TD>
+<SELECT name="p2btype">
+<OPTION value="A">A
+<OPTION value="AB">AB
+<OPTION value="B">B
+<OPTION value="O">O
+</SELECT>
+
+<TR>
+<TD align=center colspan=2><INPUT type=submit value="Get Possible Blood Types for their Child">
+
+</TD>
+
+<!--END OF TABLE FOR THE BLOOD CALCULATOR-->
+</TR>
+
+</TABLE>
+</form>
+
+	</TD>
+
+</TABLE>
+
+
+
+
+
+<!--END OF TABLE FOR THE CONTENT OF THE PAGE-->
+
+
+
+
+
+
+<P ALIGN=CENTER>
+<A HREF="Intro.html"><IMG SRC="../../buttons/intro.gif" WIDTH="90" HEIGHT="30" BORDER=0></A>
+<A HREF="markers.html"><IMG SRC="../../buttons/abo_markers.gif"  WIDTH="90" HEIGHT="30" BORDER=0></A>
+<A HREF="genotypes.html"><IMG SRC="../../buttons/genotypes.gif"  WIDTH="90" HEIGHT="30" BORDER=0></A>
+<A HREF="inherited.html"><IMG SRC="../../buttons/inherited_off.gif" WIDTH="90" HEIGHT="30" BORDER=0></A>
+<A HREF="rh_factor.html"><IMG SRC="../../buttons/rh_factor.gif"  WIDTH="90" HEIGHT="30" BORDER=0></A>
+
+<P ALIGN=CENTER>
+<A HREF="blood_types.html"><IMG SRC="../../buttons/blood_types_problems.gif" WIDTH="90" HEIGHT="30" BORDER=0></A>
+
+ <A HREF="../../human_bio.html"><IMG SRC="../../buttons/human_biology.gif" BORDER=0></A> <A HREF="../../../vocabulary/vocabulary.html"><IMG SRC="../../buttons/vocabulary.gif" BORDER=0></A> <A HREF="../../../default.html"><IMG SRC="../../buttons/the_biology_project.gif" BORDER=0></A>
+
+<!--FOOTER-->
+
+<HR>
+<CENTER><FONT SIZE=2><A HREF="../../../the_biology_project/the_biology_project.html">The Biology Project</A>
+<BR>
+University of Arizona
+<BR>
+Monday, March 30, 1998
+<BR>
+<A HREF="http://www.biology.arizona.edu/contact">Contact the Development Team</A> 
+<P>
+http://www.biology.arizona.edu
+<BR>
+All contents copyright &copy; 1998.  All rights reserved.
+</FONT>
+
+<!--End table to constrain text to 500 pixels wide-->
+
+
+</center></BODY>
+</HTML>

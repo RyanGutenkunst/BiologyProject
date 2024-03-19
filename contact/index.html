@@ -1,0 +1,143 @@
+
+<HTML> 
+
+<HEAD> 
+<TITLE>Contact The Biology Project</TITLE>
+
+<script Language="JavaScript">
+
+function isEmailAddr(email)
+{
+  var result = false;
+  var theStr = new String(email);
+  var index = theStr.indexOf("@");
+  if (index > 0)
+  {
+    var pindex = theStr.indexOf(".",index);
+    if ((pindex > index+1) && (theStr.length > pindex+1))
+	result = true;
+  }
+  return result;
+}
+
+function validRequired(formField,fieldLabel)
+{
+	var result = true;
+	
+	if (formField.value == "")
+	{
+		alert('Please enter a value for the "' + fieldLabel +'" field.');
+		formField.focus();
+		result = false;
+	}
+	
+	return result;
+}
+
+
+function validEmail(formField,fieldLabel,required)
+{
+	var result = true;
+	
+	if (required && !validRequired(formField,fieldLabel))
+		result = false;
+
+	if (result && ((formField.value.length < 3) || !isEmailAddr(formField.value)) )
+	{
+		alert("Please enter a complete email address in the form: yourname@yourdomain.com");
+		formField.focus();
+		result = false;
+	}
+   
+  return result;
+
+}
+
+
+
+function validateForm(theForm)
+{
+	// Customize these calls for your form
+
+	// Start ------->
+
+	if (!validEmail(theForm.email,"Email Address",true))
+		return false;
+
+	// <--------- End
+	
+	return true;
+}
+</script>
+
+
+
+
+</HEAD> 
+
+<BODY BACKGROUND="../dnabckgd2.gif" BGCOLOR="#FD F5 E6"> 
+<!--Begin table to constraining text to 500 pixels wide-->
+<TABLE WIDTH=620><TR><TD>
+<CENTER>
+<IMG SRC="../the_biology_project/banners/the_biology_project.GIF" ALT="The Biology Project" USEMAP="#banner" BORDER=0>
+</CENTER>
+
+<MAP NAME="banner">
+<AREA SHAPE="RECT" COORDS="0,0,249,20" HREF="../default.html">
+<AREA SHAPE="RECT" COORDS="250,0,500,20" HREF="http://www.arizona.edu">
+</MAP>
+<!--HEADINGS-->
+
+
+<H2 ALIGN=CENTER>
+<FONT COLOR="#29 10 94">Contact The Biology Project</FONT>
+</H2>
+
+<P>
+Feedback from our visitors helps The Biology Project Development Team make the site better. Please tell us what works, what doesn't, things you like, things you'd like to see, how you used the site, etc. 
+</P>
+          
+		<div style="background-color:#FFFF99; border:1px solid #999999; text-align:center; padding:1em;"> 
+		  <p align="left">Thank you for your interest in the Biology Project. Due to a shortage of funding, we are unable to reply to questions and requests at this time.</p>
+		  <p align="left">To report a problem with the site, please <a href="../the_biology_project/feedback.cfm.html">contact the webmaster</a>.</p>
+
+<h5>Copyright Statement</h5>
+
+<a href="http://www.biology.arizona.edu/the_biology_project/copyright.html">http://www.biology.arizona.edu/the_biology_project/copyright.html</a>
+<h5>Policy for Linking to The Biology Project</h5>
+
+<a href="http://www.biology.arizona.edu/the_biology_project/linking.html">http://www.biology.arizona.edu/the_biology_project/linking.html</a>
+	  </div>
+
+<!--BUTTONS-->
+
+
+
+<P ALIGN=CENTER>
+
+<A HREF="../default.html"><IMG SRC="../the_biology_project/buttons/the_biology_project.gif" BORDER=0></A>
+</P>
+ 
+
+
+<!--FOOTER-->
+
+<HR> 
+<CENTER>
+<FONT SIZE=2>
+<A HREF="../default.html">The Biology Project</A>  
+<BR>
+The University of Arizona
+<BR>
+        Revised: October 26, 2002<BR> 
+
+http://www.biology.arizona.edu 
+<BR>
+        All contents copyright &copy; 2002. All rights reserved. </FONT> 
+      </CENTER>
+
+<!--End table to constraining text to 500 pixels wide-->
+</TD></TR></TABLE>
+
+</BODY> 
+</HTML> 

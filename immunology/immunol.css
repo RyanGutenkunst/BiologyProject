@@ -1,0 +1,29 @@
+/* external style sheet immunology.css */
+
+H2.title {text-align:center; 
+	color:#5F00AE}
+	
+H3.title {text-align:center; 
+	color:#5F00AE}
+
+H3.color {color:#5F00AE}
+
+BODY {background-color:#FDF5E6;
+	background-image:url(../dnabckgd2.gif)}
+
+P.color {color:#5F00AE}
+
+BLOCKQUOTE.color {color:#5F00AE}
+
+input {  background-position: center; clip:  rect(   )}
+
+form {  text-align: center}
+
+a:visited {  color: #0000FF}
+
+B.color {color:#5F00AE}
+
+P.footer {text-align:center; 
+	font-size:small}
+
+
